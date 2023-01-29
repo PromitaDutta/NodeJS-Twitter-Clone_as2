@@ -1,0 +1,55 @@
+POST http://localhost:3007/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+POST http://localhost:3007/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+GET http://localhost:3007/user/tweets/feed/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNjMxMTV9.mPqAnNvhNHh4FS_AgS8WzNCk17dNa5UGCfunQDyG1nQ
+### 
+GET http://localhost:3007/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkyNzYxMjR9.UInefbepi1RIB5z0e56kd4bu2TLyNoPaCbDJvSWOvwM
+###
+
+GET http://localhost:3007/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkyNzYxMjR9.UInefbepi1RIB5z0e56kd4bu2TLyNoPaCbDJvSWOvwM
+###
+
+GET http://localhost:3007/tweets/4/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNzA3MzR9.cp82xxobllcdVXl4ldBd7Ma7hPZmqdNOhunriv3VyZM
+### 
+
+GET http://localhost:3007/tweets/1/likes 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNjU1Mzd9.KmPl0suk2ry1-gK5heYH1EMvN63laqsQSPskfm_xM4M
+### 
+
+
+GET http://localhost:3007/tweets/1/replies 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNjU1Mzd9.KmPl0suk2ry1-gK5heYH1EMvN63laqsQSPskfm_xM4M
+### 
+
+
+POST http://localhost:3007/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNjU1Mzd9.KmPl0suk2ry1-gK5heYH1EMvN63laqsQSPskfm_xM4M
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+###
+
+DELETE http://localhost:3007/tweets/14/ 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNjU1Mzd9.KmPl0suk2ry1-gK5heYH1EMvN63laqsQSPskfm_xM4M
+ 
